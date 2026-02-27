@@ -21,8 +21,8 @@ export default function Main() {
 
   const audioElm = React.useRef(null);
 
-  const gifsArray = gifsData.gifs;
-  const gifsUrl = gifsArray.map((g) => g.url);
+  const gifsArray = React.useMemo(() => gifsData.gifs, []);
+  const gifsUrl = React.useMemo(() => gifsArray.map((g) => g.url), [gifsArray]);
 
   /* ▶️ Play / Pause */
   React.useEffect(() => {
@@ -52,8 +52,8 @@ export default function Main() {
   };
 
   React.useEffect(() => {
-    cacheImages(gifsUrl);
-  }, []);
+  cacheImages(gifsUrl);
+}, [gifsUrl]);
 
   /* ⏭️ Next Song */
   const NextSong = () => {
