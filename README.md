@@ -1,6 +1,6 @@
 ## [PuffStuff](https://puff-stuff.web.app/)
 
-Deployed at - lofi-psi.vercel.app
+Deployed at - [Visit my music station](https://lofi-l2qxsa0we-samarjeets-projects-0db5dd3f.vercel.app/)
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
